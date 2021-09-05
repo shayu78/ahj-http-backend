@@ -1,0 +1,36 @@
+{
+  "name": "ahj-http-backend",
+  "version": "1.0.0",
+  "description": "ahj-http-backend",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node ./src/server.js",
+    "watch": "forever -w ./src/server.js",
+    "stop": "forever stopall"
+  },
+  "engines": {
+    "node": "11.x"
+  },
+  "author": "shayu78@mail.ru",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.23.0",
+    "forever": "^4.0.1",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "uuid": "^8.3.2",
+    "ws": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.3.2"
+  }
+}
